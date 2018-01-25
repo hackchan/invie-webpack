@@ -1,0 +1,48 @@
+@import './variables.css';
+
+
+/*--Mixins*/
+@define-mixin btn $textColor,$bgColor,$bgColorStart,$bgColorEnd {
+    border-radius:12px;
+    border:none;
+    color:$(textColor);
+    padding:7px 20px;
+    cursor:pointer;
+    font-size: var(--fontSize);
+    text-decoration:none;
+    background: $(bgColor);
+    background: linear-gradient(to left, $(bgColorStart), $(bgColorEnd));
+}
+body {
+   
+    background: var(--colorRed);
+    //font-size:calc(var(--fontSize) * 2);
+    font-size: responsive 20px 40px;
+    @media (--mobile) {
+        background:peru;
+    }
+}
+
+.btn {
+    @mixin btn var(--bg-body), var(--btn-gradient), var(--btn-gradient-start), var(--btn-gradient-end)
+}
+
+.u-Grid{
+    background: gray;
+    lost-center:800px;
+    lost-utility:clearfix;
+    &-column{
+        background: blue;
+        lost-column:1/5;
+        @media (--tablet) {
+          lost-column:1/3;  
+        }
+
+        @media (--mobile) {
+          lost-column:1/1; 
+          background: pink; 
+        }
+
+       
+    }
+}
