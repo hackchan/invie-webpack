@@ -7,7 +7,7 @@
     "build:dll": "webpack  --config ./webpack.dll.config.js",
     "build": "webpack  --config ./webpack.config.js --watch",
     "build-server": "webpack-dev-server --config ./webpack.config.js",
-    "build-all":" npm run build && npm run build-server"
+    "build-all": " npm run build && npm run build-server"
   },
   "author": "Fabio Rojas <fabiorojas7@gmail.com>",
   "license": "MIT",
@@ -33,6 +33,7 @@
     "node-sass": "^4.7.2",
     "postcss": "^6.0.16",
     "postcss-cssnext": "^3.0.2",
+    "postcss-font-magician": "^2.1.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.10",
     "postcss-mixins": "^6.2.0",

@@ -7,7 +7,7 @@ const cleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = (env) => {
     
     plugins = [
-        new ExtractTextPlugin("css/[name].css"),
+        new ExtractTextPlugin("css/[name].css",{publicPath:'./dist/'}),
         new webpack.DllReferencePlugin({
             manifest:require('./modules-manifest.json'),
         })
@@ -85,13 +85,14 @@ module.exports = (env) => {
                     {
                       loader: 'css-loader',
                       options: {
-                        //modules: true,
+                        //modules: false,
                         camelCase:false,
                         sourceMap:false,
                         minimize:false,
+                        url:false,
                         importLoaders: 1,
-                        //localIdentName:'[local]'
-                      }
+                        localIdentName:'[local]'
+                      },
                     },
                     {loader:'postcss-loader'},
                   ]
@@ -148,7 +149,7 @@ module.exports = (env) => {
             //soporte para imagenes
 
              {
-                test:/\.(jpg|png|gif|eot|svg|ttf|woff)$/,
+                test:/\.(jpg|png|gif)$/,
                 use:{
                    loader:'url-loader',
                    options:{
@@ -156,6 +157,19 @@ module.exports = (env) => {
                        name:'img/[name].[ext]'
                    } 
                 }
+
+             },
+            //soporte para fuentes
+             {
+                test:/\.(eot|svg|ttf|woff|woff2)$/,
+                use:{
+                   loader:'file-loader',
+                   options:{
+                    name:'[name].[ext]',
+                    outputPath:'fonts/'
+                } 
+                }
+
 
              },
 

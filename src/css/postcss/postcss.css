@@ -1,5 +1,5 @@
 @import './variables.css';
-
+@import './fonts.css';
 
 /*--Mixins*/
 @define-mixin btn $textColor,$bgColor,$bgColorStart,$bgColorEnd {

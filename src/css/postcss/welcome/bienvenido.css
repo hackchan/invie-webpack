@@ -1,0 +1,79 @@
+@import '../var/variables.css';
+@import '../util/utilidades.css';
+
+
+.welcome{
+    background: #232234;
+    background: linear-gradient(to left, #232234, #1c3643);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.welcome p {
+    margin: 0;
+    height: 200px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login {
+    height: 100vh;
+    
+    
+}
+
+.login h2{
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    color:#232234;
+    font-weight: bold; 
+    margin-bottom: 20px;
+
+}
+
+.login-blog{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.login p {
+    margin: 0 auto;
+   
+}
+
+.article{
+   
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+}
+
+article h4 {
+    font-size: 24px;
+    margin:0;
+    margin-bottom: 15px;
+}
+
+.privacida {
+    display: inline-block;
+    width: 50%;
+    background: blue;
+}
+
+.registrar {
+    text-align: center;
+    padding-bottom: 20px;
+}

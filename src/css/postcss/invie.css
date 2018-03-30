@@ -1,29 +1,123 @@
-
+@import 'utilidades.css';
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Allerta', sans-serif
 */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-  
+    background:#FFF;
     font-size: 16px;
-    font-family: 'Allerta', sans-serif;
+    font-family: open_sansregular;
+    margin:0;
+}
+
+input, textarea {
+    outline: 0;
+}
+
+input:focus, textarea:focus {
+    background: #CECECE;
+}
+
+.Head { 
+    position: relative;
+    &__container {
+        display:inline-block;
+        margin-left:0;
+       
+        
+    }
+
+    &__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top:20px;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 30px;
+    }
+    &__link {
+        text-decoration:none;
+        padding: .5em;
+    }
+
 }
 
 .Portada {
-    
+     background-image: url(../img/background.png);
+   padding: 2.4em;
+     color:white;
+    height:500px;
     &__titulo {
     font-size: 4.4em;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 70px;
+    font-size:70px;
+    line-height: 100px;
+    }
+    &__titulo span{
+        text-decoration: underline;
     }
     &__titulo-a {
-    font-size: 1.5em;
-    
+        font-size: 1.5em;
+        margin-top: 0;
+        padding-left: 1em;
+        font-size: 20px;
+       
     }
+    
 }
 
 .Guitarras {
+      color:'#1F313C';
+  &__guitarra{
+      margin:10px;
+    padding:10px;
+      border: 1px solid #1F313C;
+      border-radius: 20px;
+      //clear: both;
+      //overflow: hidden;
+    }
+   &__guitarra.altura{
+       height: 190px; 
+   }
+   &__detalle-a{
+      
+      
+       margin-right: 370px;
+       padding-left:20px;
+   }
+
+    &__detalle-b{
+      
+       
+       margin-left: 370px;
+       position: relative;
+       bottom: 90px;
+   }
+
+   &__lista{
+       padding: 0;
+   }
+    
    &__title {
          font-size: 2.2em;
          font-family: 'Montserrat', sans-serif;
@@ -31,9 +125,123 @@ body {
 
    &__title-b {
          font-size: 3.1em;
+         margin-bottom: 20px;
    }
 }
 
 
+.Footer{
+    margin-top: 50px;
+      background: #273b47;
+    padding: 50px 10px;
+    color:white;
+   
+    &__contenedor{
+        
+        display:flex;
+        padding:10px;
+    }
 
+    &__contacto{
+        display: flex;
+        width: 300px;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 200px;
+    }
+
+    &__contacto a {
+        margin: 10px 10px 10px 0;
+        color:white;
+        text-decoration: none;
+    }
+
+    &__contacto a strong{
+        display: block;
+    }
+
+    &__formulario{
+        display: flex;
+        width:400px;
+        color:white;
+        
+    }
+
+    .col1,.col2{
+        display: flex;
+        flex-direction: column;
+    }
+    .col1 {
+        margin-right: 15px;
+    }
+
+    .col2 {
+       align-items: flex-end;
+    }
+
+    .intereses {
+        font-size: 12px;
+    }
+
+    label, .sexo, .intereses{
+        margin-bottom: 10px;
+    }
+
+    .sexo {
+        margin-top: 10px;
+    }
+}
+
+.boton{
+      background: #fd324E;
+        color:white;
+        border:none;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+        margin-bottom: 70px;
+        font-size: 18px;
+        background: linear-gradient(to left,#fe344e,#ff7250);
+         
+        
+        
+        background: linear-gradient(to bottom, #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); 
+        
+    }
+
+
+table{
+    margin: 30px;
+    width:100%;
+}
+
+th {
+    text-align: left;
+    background: #273b47;
+      color:white;
+}
+
+th{
+    padding: 10px 20px;
+}
+
+td{
+    padding: 20px;
+}
+
+table,th,td {
+    border: 1px solid #273b47;
+    border-collapse:collapse; 
+}
+
+.Head__item:before {
+    content: 'o';
+    font-size: 20px;
+}
+
+.Head__link {
+    color:white;
+    padding: 10px;
+    font-weight: bold;
+}
 

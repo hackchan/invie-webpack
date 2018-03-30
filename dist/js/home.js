@@ -71,13 +71,20 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_postcss_invie_css__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_postcss_invie_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_postcss_invie_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_background_png__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_background_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__img_background_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_fonts_styl__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_fonts_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_fonts_styl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_tierra_png__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_tierra_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__img_tierra_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_background_png__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_background_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__img_background_png__);
+
+//import "../css/postcss/index.css"
 
 
 
 
-alert('hola mundo');
+
+//alert('hola mundo')
 
 /***/ }),
 /* 1 */
@@ -87,6 +94,18 @@ alert('hola mundo');
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/tierra.png";
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/background.png";

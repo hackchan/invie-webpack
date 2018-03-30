@@ -1,0 +1,16 @@
+.wrapper {
+    width:800px;
+    margin: auto;
+}
+
+.left {
+    float:left;
+    position: relative;
+    
+}
+
+.right {
+    float:right;
+    position: relative;
+    top:-122px;
+}

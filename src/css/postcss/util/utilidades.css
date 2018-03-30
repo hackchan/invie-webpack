@@ -1,0 +1,45 @@
+.wrapper {
+    width:800px;
+    margin: auto;
+}
+
+.wrapper_a {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.green-right{
+  border-right: solid 2px #6dae33;
+}
+
+.pleft {
+    float:left;
+    position: relative;
+    
+}
+
+.pright {
+    float:right;
+    position: relative;
+    top:-122px;
+}
+
+.privacy{
+    max-width: 285px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: underline;
+    color: #0a8ecd;
+    cursor: pointer;
+}
+
+.label{
+    text-align: left;
+    display: block;
+    margin: 0 0 0.5 0;
+}

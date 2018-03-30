@@ -8,6 +8,7 @@ module.exports = {
         'postcss-cssnext':{
             browsers:['> 5%','ie 8']
         },
+        //'postcss-font-magician':{},
         //'css-mqpacker':{}
         
         

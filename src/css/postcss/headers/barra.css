@@ -1,0 +1,70 @@
+ @import '../var/variables.css';
+ @import '../boton/botones.css';
+
+
+.Header {
+    background: var(--barra-header);
+    background: linear-gradient(to left, #232234, #1c3643);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    &__figure {
+        margin: 0;
+        margin-left:10px;
+    }
+    &__options {
+        height: inherit;
+        display:flex;
+        align-items:center;
+    }
+    &__menu {
+        height: inherit;
+    }
+    &__list{
+        height: inherit;
+        display: flex;
+        margin: 0;
+
+    }
+    &__item {
+       height: inherit;
+       list-style: none;
+       display: flex;
+       align-items: center;
+    }
+
+    &__item:after {
+        content: "";
+        height: 28px;
+        border-right: 1px solid var(--barra-text);
+    }
+
+    &__item:last-child:after{
+       display: none;
+    }
+
+    &__item a {
+        color:white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: inherit;
+        font-weight: bold;
+        font-size: 14px;
+        
+    }
+
+    
+
+    &__item a.is-active{
+        box-shadow:inset 0 5px 0px var(--barra-hover-active);
+    }
+
+    &__item a:hover {
+        box-shadow:inset 0 5px 0 var(--barra-hover);
+        
+    }
+
+}

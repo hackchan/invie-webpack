@@ -1,0 +1,61 @@
+
+@import 'fonts.css'
+@import 'variables.css';
+@import 'autors.css';
+@import 'barra.css';
+@import 'botones.css';
+@import 'paginador.css';
+
+@import 'login.css';
+
+
+body{
+    margin: 0;
+    font-family: open_sansregular;
+    color:var(--text-color);
+}
+
+
+
+
+.blog{
+    max-width:800px;
+    margin: 0 auto;
+   
+}
+
+.portada{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.portada img {
+    max-width: 100%;
+}
+
+.portada .description {
+    background: rgba(255,255,255,.9);
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.blog-item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog-item h3{
+    font-weight: 600px;
+    margin: 10px 0 15px;
+}
+
+.items-blog{
+    width:250px;
+}
+
+.items-blog .description{
+    margin-bottom: 15px;
+}

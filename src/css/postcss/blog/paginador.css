@@ -1,0 +1,38 @@
+@import 'variables.css';
+
+.paginado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.paginado ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    list-style:none;
+    display: flex;
+   
+}
+
+.paginado li {
+  background: #eaeaea;
+  height: 40px;
+  line-height: 40px;
+  
+  border: 1px solid gray;
+  margin: 0 3px; 
+}
+
+.paginado li.selected{
+    border-color: transparent;
+    background: white;
+} 
+
+.paginado ul a{
+    color:var(--text-color);
+    text-decoration: none;
+    padding: 0 10px;
+    display: block;
+}

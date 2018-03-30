@@ -1,4 +1,21 @@
 :root{
+    /*Colores del header*/
+    --barra-header:#232234;
+    --barra-text:#FFFFFF;
+    //--barra-hover:#D14B00;
+    --barra-hover:#CA0035;
+    --barra-hover-active:#FED60A;
+    --barra-altura:50px;
+    
+    /*Colores botones*/
+    --btn-fg:#fafafa;
+    --btn-bg:196,27,0;
+    --btn-fb:#3B5999;
+    --btn-tw:#60A9DE; 
+    /*Colores Principal*/
+    --text-color:#515151;
+    --btn-bg:196,27,0;
+
     --colorRed: #fafafa;
     --bg-body: #fafafa;
     --bg-header:#466173;
